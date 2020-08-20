@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cardd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="30dp"
+            app:cardBackgroundColor="@color/primary_dark">
+
+
+            <TextView
+                android:id="@+id/txt_all_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto"
+                android:paddingBottom="23dp"
+                android:text="All Books"
+                android:textColor="@color/icons"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/searchbar"
+            android:hint="Ex: Engineering Mathematics"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:iconifiedByDefault="false">
+
+
+        </EditText>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchbar"
+            android:layout_marginTop="10dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

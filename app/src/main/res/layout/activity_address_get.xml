@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEEDD8"
+    tools:context=".address_get">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/homeaddress"
+        android:id="@+id/addressGraphic"
+        android:layout_centerHorizontal="true"
+        android:background="#EBE8D3"
+        android:layout_below="@+id/textViewAddress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Delivery Address"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textViewAddress"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressGraphic"
+        android:hint="Enter Your Address Here"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextAddress"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Landmark"
+        android:id="@+id/editTextLandmark"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_proceed"
+        android:text="Proceed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextLandmark"
+        android:layout_marginTop="150dp"
+
+        />
+
+
+</RelativeLayout>

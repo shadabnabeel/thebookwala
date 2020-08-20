@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CategoriesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card_cat_text"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:cardBackgroundColor="@color/primary_dark">
+
+
+            <TextView
+                android:id="@+id/cat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/roboto"
+                android:text="Categories"
+                android:textColor="@color/icons"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <RelativeLayout
+            android:id="@+id/card_cat_eng"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/card_cat_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cat_eng"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/engu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cat_eng"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto"
+                android:text="Engineering"
+                android:textColor="@color/icons"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/card_cat_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cat_med"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/station" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cat_med"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="26dp"
+                android:fontFamily="@font/roboto"
+                android:text="Stationary"
+                android:textColor="@color/icons"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/card_cat_eng"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cat_puc"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/puc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cat_puc"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto"
+                android:text="PUC"
+                android:textColor="@color/icons"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

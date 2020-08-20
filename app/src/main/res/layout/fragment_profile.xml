@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/descbg">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_user"
+        android:text="Welcome user"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/icons"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_user"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:text="Email:  "
+        android:textSize="20sp"
+        android:textColor="@color/icons"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:id="@+id/user_email"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userEmail"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/user_email"
+        android:layout_below="@+id/welcome_user"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/icons"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:text="Large text"
+        />
+
+    <TextView
+        android:id="@+id/currentOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Current Orders"
+        android:layout_below="@+id/user_email"
+        android:layout_marginTop="180dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/changeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Delivery Address"
+        android:layout_below="@+id/currentOrders"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"/>
+
+</RelativeLayout>
+
+
+
+
+</FrameLayout>

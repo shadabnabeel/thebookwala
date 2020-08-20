@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    tools:context=".bookdescription">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/descbg">
+
+
+        <android.support.design.card.MaterialCardView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="100dp"
+            android:background="@drawable/shadow"
+            android:id="@+id/book_card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/book_desc_img"
+                    android:layout_width="167dp"
+                    android:layout_height="218dp"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.design.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/book_desc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+            android:text="Book Name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/book_desc_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_card"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+            android:text="Author"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rs_symbol"
+            android:text="Rs."
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto"
+            android:layout_toLeftOf="@id/book_desc_Price"
+            android:textColor="@color/icons"
+            android:layout_below="@id/book_desc_author"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/book_desc_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_desc_author"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/icons"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:text="Price"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/book_desc_quant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_desc_Price"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Please select quantity :"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_desc_quant"
+            android:layout_below="@id/book_desc_Price"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/numberPicker">
+
+
+        </Spinner>
+
+
+        <Button
+            android:id="@+id/add_to_cart"
+            android:layout_width="232dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/book_desc_quant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/addtocartbtn"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
